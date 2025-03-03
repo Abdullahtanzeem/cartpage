@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeCard } from "../components"
+import  {HomeCard}  from "../components/HomeCard";
 export const HomePage = () => {
   const products = [
     { "id": 1, "name": "Sony Wh-Ch510 Bluetooth Wireless", "price": 149, "image": "/assets/images/1001.png" },
