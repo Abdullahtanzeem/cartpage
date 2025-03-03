@@ -4,7 +4,7 @@ export const CartCard = ({ product }) => {
   const { name, price, image } = product;
 
   return (
-    <div className="flex flex-col md:flex-row items-center bg-white border border-gray-200 rounded-lg shadow-sm p-4 md:max-w-xl dark:border-gray-700 dark:bg-gray-800">
+    <div className="flex justify-around  flex-col md:flex-row items-center bg-white border border-gray-200 rounded-lg shadow-sm p-4 md:max-w-xl dark:border-gray-700 dark:bg-gray-800">
       <img
         className="object-cover w-48 h-32 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
         src={image}

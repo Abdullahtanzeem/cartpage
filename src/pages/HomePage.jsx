@@ -1,6 +1,7 @@
-import React from 'react';
+import { useTitle } from "../hooks/useTitle";
 import  {HomeCard}  from "../components/HomeCard";
 export const HomePage = () => {
+  useTitle("Home");
   const products = [
     { "id": 1, "name": "Sony Wh-Ch510 Bluetooth Wireless", "price": 149, "image": "/assets/images/1001.png" },
     { "id": 2, "name": "boAt Rockerz 450", "price": 49, "image": "/assets/images/1002.png" },
@@ -12,7 +13,7 @@ export const HomePage = () => {
 
   return (
     <main>
-      <section className="flex justify-center items-center flex-wrap gap-6 p-6">
+      <section className="flex justify-center flex-wrap ">
         {products.map((product) => (
           <HomeCard key={product.id} product={product} />
         ))}
